@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #a5cced;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+/*# sourceMappingURL=main.css.map */
