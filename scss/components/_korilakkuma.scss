@@ -4,9 +4,8 @@
   background-color: $beige;
   border-radius: 50% / 9rem 9rem 7rem 7rem;
   position: absolute;
-  bottom: -3.4rem; // -11.4%;
-  // bottom: 50%;
-  left: 77.5%;
+  bottom: -3.4rem;
+  right: 5%;
 
   .ears {
     @include size(5rem, 5rem);
