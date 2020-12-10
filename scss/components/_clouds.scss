@@ -1,0 +1,62 @@
+// CLOUDS
+.clouds {
+  // @include size(18rem, 12rem);
+  position: absolute;
+  // top: 25%;
+
+  div {
+    // @include size(6.5rem, 6.5rem);
+    border-radius: 50%;
+    background-color: $white;
+    position: absolute;
+
+    &:nth-child(1) {
+      left: 0;
+      bottom: 10%;
+    }
+    &:nth-child(2) {
+      left: 20%;
+    }
+    &:nth-child(3) {
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+    }
+    &:nth-child(4) {
+      right: 20%;
+      top: 10%;
+    }
+    &:nth-child(5) {
+      right: 0;
+      bottom: 10%;
+    }
+  }
+}
+
+.clouds--1 {
+  @include size(14.5rem, 10rem);
+  top: 10%;
+  left: 5%;
+
+  div {
+    @include size(5.5rem, 5.5rem);
+
+    &:nth-child(2) {
+      left: 20%;
+      top: 10%;
+    }
+    &:nth-child(4) {
+      right: 20%;
+      top: 5%;
+    }
+  }
+}
+.clouds--2 {
+  @include size(19rem, 12rem);
+  top: calc(10% + 10rem);
+  left: calc(5% + 17rem);
+
+  div {
+    @include size(7rem, 7rem);
+  }
+}
