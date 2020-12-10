@@ -20,6 +20,92 @@ body {
   overflow: hidden;
 }
 
+.ears {
+  background-color: inherit;
+  border-radius: 50%;
+  position: absolute;
+  top: -1.5rem;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.ears--left {
+  left: 0;
+}
+
+.ears--left::before {
+  left: -20%;
+}
+
+.ears--right {
+  right: 0;
+}
+
+.ears--right::before {
+  right: -20%;
+}
+
+.ears--left::before, .ears--right::before {
+  content: '';
+  border-radius: 50%;
+  position: absolute;
+  bottom: -15%;
+}
+
+.eyes {
+  background-color: #000;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.snout {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.nose {
+  border-radius: 50%;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #000;
+}
+
+.mouth {
+  background-color: #000;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.mouth::before, .mouth::after {
+  content: '';
+  position: absolute;
+  background-color: inherit;
+  bottom: -0.35rem;
+  border-radius: 50%;
+}
+
+.mouth::before {
+  left: -1rem;
+  -webkit-transform: rotate(60deg);
+          transform: rotate(60deg);
+}
+
+.mouth::after {
+  right: -1rem;
+  -webkit-transform: rotate(-60deg);
+          transform: rotate(-60deg);
+}
+
 .rilakkuma {
   width: 23rem;
   height: 18rem;
@@ -33,46 +119,17 @@ body {
 .rilakkuma .ears {
   width: 6rem;
   height: 6rem;
-  background-color: inherit;
-  border-radius: 50%;
-  position: absolute;
-  top: -1.5rem;
-  z-index: -1;
-  overflow: hidden;
-}
-
-.rilakkuma .ears--left {
-  left: 0;
-}
-
-.rilakkuma .ears--left::before {
-  left: -20%;
-}
-
-.rilakkuma .ears--right {
-  right: 0;
-}
-
-.rilakkuma .ears--right::before {
-  right: -20%;
 }
 
 .rilakkuma .ears--left::before, .rilakkuma .ears--right::before {
-  content: '';
   width: 5rem;
   height: 5rem;
   background-color: #e5b429;
-  border-radius: 50%;
-  position: absolute;
-  bottom: -15%;
 }
 
 .rilakkuma .eyes {
   width: 2.25rem;
   height: 2.25rem;
-  background-color: #000;
-  border-radius: 50%;
-  position: absolute;
   bottom: 37%;
 }
 
@@ -87,55 +144,73 @@ body {
 .rilakkuma .snout {
   width: 7.5rem;
   height: 5.5rem;
-  background-color: #fff;
-  border-radius: 50%;
-  position: absolute;
-  bottom: 15%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
 }
 
 .rilakkuma .nose {
   width: 1.8rem;
   height: 1.8rem;
-  border-radius: 50%;
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  background-color: #000;
 }
 
 .rilakkuma .mouth {
-  background-color: #000;
-  position: absolute;
   bottom: 25%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
 }
 
 .rilakkuma .mouth::before, .rilakkuma .mouth::after {
-  content: '';
-  position: absolute;
   width: 0.75rem;
   height: 2rem;
-  background-color: inherit;
-  bottom: -0.35rem;
-  border-radius: 50%;
 }
 
-.rilakkuma .mouth::before {
-  left: -1rem;
-  -webkit-transform: rotate(60deg);
-          transform: rotate(60deg);
+.korilakkuma {
+  width: 19rem;
+  height: 14.5rem;
+  background-color: #eddda2;
+  border-radius: 50% / 9rem 9rem 7rem 7rem;
+  position: absolute;
+  bottom: -3.4rem;
+  left: 77.5%;
 }
 
-.rilakkuma .mouth::after {
-  right: -1rem;
-  -webkit-transform: rotate(-60deg);
-          transform: rotate(-60deg);
+.korilakkuma .ears {
+  width: 5rem;
+  height: 5rem;
+}
+
+.korilakkuma .ears--left::before, .korilakkuma .ears--right::before {
+  width: 4.25rem;
+  height: 4.25rem;
+  background-color: #e0a6bc;
+}
+
+.korilakkuma .eyes {
+  width: 1.8rem;
+  height: 1.8rem;
+  bottom: 36%;
+}
+
+.korilakkuma .eyes--left {
+  left: 25%;
+}
+
+.korilakkuma .eyes--right {
+  right: 25%;
+}
+
+.korilakkuma .snout {
+  width: 5.7rem;
+  height: 4rem;
+}
+
+.korilakkuma .nose {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.korilakkuma .mouth {
+  bottom: 30%;
+}
+
+.korilakkuma .mouth::before, .korilakkuma .mouth::after {
+  width: 0.6rem;
+  height: 1.5rem;
 }
 /*# sourceMappingURL=main.css.map */

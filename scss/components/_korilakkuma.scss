@@ -1,0 +1,50 @@
+// KORILAKKUMA
+.korilakkuma {
+  @include size(19rem, 14.5rem);
+  background-color: $beige;
+  border-radius: 50% / 9rem 9rem 7rem 7rem;
+  position: absolute;
+  bottom: -3.4rem; // -11.4%;
+  // bottom: 50%;
+  left: 77.5%;
+
+  .ears {
+    @include size(5rem, 5rem);
+
+    &--left::before,
+    &--right::before {
+      @include size(4.25rem, 4.25rem);
+      background-color: $pink;
+    }
+  }
+
+  .eyes {
+    @include size(1.8rem, 1.8rem);
+    bottom: 36%;
+
+    &--left {
+      left: 25%;
+    }
+
+    &--right {
+      right: 25%;
+    }
+  }
+
+  .snout {
+    @include size(5.7rem, 4rem);
+  }
+
+  .nose {
+    @include size(1.3rem, 1.3rem);
+  }
+
+  .mouth {
+    bottom: 30%;
+
+    &::before,
+    &::after {
+      @include size(0.6rem, 1.5rem);
+    }
+  }
+}

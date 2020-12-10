@@ -18,113 +18,86 @@ body {
   overflow: hidden;
 }
 
-// RILAKKUMA
-.rilakkuma {
-  @include size(23rem, 18rem);
-  background-color: $brown;
-  border-radius: 50% / 10rem 10rem 8rem 8rem;
+.ears {
+  background-color: inherit;
+  border-radius: 50%;
   position: absolute;
-  bottom: -4rem; // -11.4%;
-  left: 50%;
+  top: -1.5rem;
+  z-index: -1;
+  overflow: hidden;
 
-  .ears {
-    @include size(6rem, 6rem);
-    background-color: inherit;
-    border-radius: 50%;
-    position: absolute;
-    top: -1.5rem;
-    z-index: -1;
-    overflow: hidden;
-
-    &--left {
-      left: 0;
-
-      &::before {
-        left: -20%;
-      }
-    }
-
-    &--right {
-      right: 0;
-
-      &::before {
-        right: -20%;
-      }
-    }
-
-    &--left::before,
-    &--right::before {
-      content: '';
-      @include size(5rem, 5rem);
-      background-color: $yellow;
-      border-radius: 50%;
-      position: absolute;
-      bottom: -15%;
-    }
-  }
-
-  .eyes {
-    @include size(2.25rem, 2.25rem);
-    background-color: $black;
-    border-radius: 50%;
-    position: absolute;
-    bottom: 37%;
-
-    &--left {
-      left: 22%;
-    }
-
-    &--right {
-      right: 22%;
-    }
-  }
-
-  .snout {
-    @include size(7.5rem, 5.5rem);
-    background-color: $white;
-    border-radius: 50%;
-    position: absolute;
-    bottom: 15%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .nose {
-    @include size(1.8rem, 1.8rem);
-    border-radius: 50%;
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: $black;
-  }
-
-  .mouth {
-    // @include size(1.8rem, 1.8rem);
-    background-color: $black;
-    position: absolute;
-    bottom: 25%;
-    left: 50%;
-    transform: translateX(-50%);
-
-    &::before,
-    &::after {
-      content: '';
-      position: absolute;
-      @include size(0.75rem, 2rem);
-      background-color: inherit;
-      bottom: -0.35rem;
-      border-radius: 50%;
-    }
+  &--left {
+    left: 0;
 
     &::before {
-      left: -1rem;
-      transform: rotate(60deg);
+      left: -20%;
     }
+  }
 
-    &::after {
-      right: -1rem;
-      transform: rotate(-60deg);
+  &--right {
+    right: 0;
+
+    &::before {
+      right: -20%;
     }
+  }
+
+  &--left::before,
+  &--right::before {
+    content: '';
+    border-radius: 50%;
+    position: absolute;
+    bottom: -15%;
+  }
+}
+
+.eyes {
+  background-color: $black;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.snout {
+  background-color: $white;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nose {
+  border-radius: 50%;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: $black;
+}
+
+.mouth {
+  background-color: $black;
+  position: absolute;
+  // bottom: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    background-color: inherit;
+    bottom: -0.35rem;
+    border-radius: 50%;
+  }
+
+  &::before {
+    left: -1rem;
+    transform: rotate(60deg);
+  }
+
+  &::after {
+    right: -1rem;
+    transform: rotate(-60deg);
   }
 }

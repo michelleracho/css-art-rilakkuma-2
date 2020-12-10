@@ -1,0 +1,50 @@
+// RILAKKUMA
+.rilakkuma {
+  @include size(23rem, 18rem);
+  background-color: $brown;
+  border-radius: 50% / 10rem 10rem 8rem 8rem;
+  position: absolute;
+  bottom: -4rem; // -11.4%;
+  // bottom: 50%;
+  left: 50%;
+
+  .ears {
+    @include size(6rem, 6rem);
+
+    &--left::before,
+    &--right::before {
+      @include size(5rem, 5rem);
+      background-color: $yellow;
+    }
+  }
+
+  .eyes {
+    @include size(2.25rem, 2.25rem);
+    bottom: 37%;
+
+    &--left {
+      left: 22%;
+    }
+
+    &--right {
+      right: 22%;
+    }
+  }
+
+  .snout {
+    @include size(7.5rem, 5.5rem);
+  }
+
+  .nose {
+    @include size(1.8rem, 1.8rem);
+  }
+
+  .mouth {
+    bottom: 25%;
+
+    &::before,
+    &::after {
+      @include size(0.75rem, 2rem);
+    }
+  }
+}
