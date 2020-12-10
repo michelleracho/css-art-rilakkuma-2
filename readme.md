@@ -2,4 +2,4 @@
 
 Original image reference:
 
-![original image](https://github.com/michelleracho/css-art-rilakkuma-2/blob/main/src/img/design/original.jpg)
+![original image](https://github.com/michelleracho/css-art-rilakkuma-2/blob/main/design/original.jpg)
